@@ -4,4 +4,4 @@
 Link para o acesso: 
 
 Um site que muda a perpectiva de achar lugares, mostrando a facilidade de encontra lugares legais
-em diferentes cidades.
+em Ourinhos.
