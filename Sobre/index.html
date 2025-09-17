@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Programadores DS Ourinhos</title>
+    <style>
+        :root {
+            --azul-escuro: #1a237e;
+            --azul-claro: #dde2e6;
+            --amarelo: #ffd600;
+            --branco: #ffffff;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--azul-claro);
+            color: var(--azul-escuro);
+        }
+        header {
+            background: var(--azul-escuro);
+            color: var(--branco);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+        .profile-card {
+            background: var(--branco);
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(26,35,126,0.1);
+            width: 320px;
+            max-width: 90vw;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 4px 16px rgba(26,35,126,0.15);
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--amarelo);
+            margin-bottom: 1rem;
+            background: var(--azul-claro);
+        }
+        .profile-name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--azul-escuro);
+            margin-bottom: 0.5rem;
+        }
+        .profile-desc {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .profile-tags {
+            margin-top: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.3rem;
+        }
+        .tag {
+            background: var(--amarelo);
+            color: var(--azul-escuro);
+            border-radius: 0.5rem;
+            padding: 0.2rem 0.7rem;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Nós</h1>
+        <p>Conheça os programadores juniores do Ensino Médio de DS Ourinhos</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="profile-card">
+                <img src="Paulo.jpg" alt="Foto de Paulo Henrique" class="profile-photo">
+                <div class="profile-name">Paulo Henrique</div>
+                <div class="profile-desc">
+                    Sou Paulo Henrique Moraes Oliveira, estudante do Ensino Médio na ETEC.<br>
+                    Tenho grande interesse na área de tecnologia e já possuo conhecimentos em PHP, CSS, HTML e JavaScript. Gosto de estudar e me dedicar aos meus objetivos, sempre buscando aprender coisas novas e me aprimorar.<br>
+                    Sou uma pessoa empenhada e determinada, com disciplina tanto nos estudos quanto na vida pessoal. Além da área de tecnologia, tenho paixão por futebol e esportes em geral, que me ajudam a manter o equilíbrio e o trabalho em equipe.
+                </div>
+                <div class="profile-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="Spiller.jpg" alt="Foto de Lucas Spiller" class="profile-photo">
+                <div class="profile-name">Lucas Spiller</div>
+                <div class="profile-desc">
+                   Lucas Spiller é estudante do Ensino Médio na ETEC e gosta de resolver problemas com programação.<br>
+                    Tem interesse em tecnologia e domina PHP, CSS, HTML e JavaScript. É dedicado aos estudos e sempre busca aprimorar seus conhecimentos. No tempo livre, gosta de praticar tênis de mesa, que ajuda a desenvolver concentração e trabalho em equipe.
+                </div>
+                <div class="profile-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="Natan.jpg" alt="Foto de Natan Vece" class="profile-photo">
+                <div class="profile-name">Natan Vece</div>
+                <div class="profile-desc">
+                     Natan Vece é estudante do Ensino Médio na ETEC e tem grande interesse pela área de tecnologia, com conhecimentos em PHP, CSS, HTML e JavaScript.<br>
+                    Sempre busca aprender coisas novas e se aprimorar, sendo disciplinado e dedicado nos estudos e na vida pessoal. Também gosta de esportes, que considera essenciais para o equilíbrio e o trabalho em equipe.
+                </div>
+                <div class="profile-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="profile-card">
+                <img src="Victor.jpg" alt="Foto de Julia Martins" class="profile-photo">
+                <div class="profile-name">Victor Valentin</div>
+                <div class="profile-desc">
+Victor Valentin é estudante do Ensino Médio na ETEC, apaixonado por tecnologia e sempre buscando evoluir em programação.<br>
+                    É disciplinado e dedicado, gosta de estudar e se aprimorar. No tempo livre, pratica academia, futebol e vôlei, esportes que ajudam a manter o equilíbrio e o espírito de equipe. Também possui conhecimentos em PHP, CSS, HTML e JavaScript.
+                <div class="profile-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">PHP</span>
+                </div>
